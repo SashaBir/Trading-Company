@@ -12,17 +12,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TradingCompany.Project.LoginMenu.Scripts;
 
 namespace TradingCompany
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly LoginMenu _loginMenu;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            _loginMenu = new LoginMenu(null, null, enterButton.Click);
         }
     }
 }
