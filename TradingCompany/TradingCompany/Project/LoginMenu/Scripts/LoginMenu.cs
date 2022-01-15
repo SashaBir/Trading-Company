@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace TradingCompany.Project.LoginMenu.Scripts
 {
@@ -38,6 +26,7 @@ namespace TradingCompany.Project.LoginMenu.Scripts
             if (_login.Text == DEFUALT_LOGIN && _password.Text == DEFUALT_Password)
             {
                 // вход в приложение
+                //ManipulatorExtended.SwitchToOtherPage();
             }
         }
     }
